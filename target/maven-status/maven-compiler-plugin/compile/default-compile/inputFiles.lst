@@ -1,10 +1,5 @@
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/Admin/SchoolMangement_page.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/common/JobRequest.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/Hr_manager/LoginPage_HRM.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/Hr_manager/HR_management.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/Admin/Dashboard_page.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/base/BasePage.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/common/SideMenuLink_page.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/Admin/AdminLogin_Page.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/Admin/UsersManagesments_page.java
-/home/wadmin/Desktop/JAVA-PlayWright/flinki/src/main/java/com/samurai/pages/common/LoginPage.java
+/home/wadmin/Desktop/New Folder/Weavers Framekwork/Playwright/src/main/java/com/Weaversweb/base/BasePage.java
+/home/wadmin/Desktop/New Folder/Weavers Framekwork/Playwright/src/main/java/com/Weaversweb/pages/LoginPage.java
+/home/wadmin/Desktop/New Folder/Weavers Framekwork/Playwright/src/main/java/com/Weaversweb/utils/ConfigReader.java
+/home/wadmin/Desktop/New Folder/Weavers Framekwork/Playwright/src/main/java/com/Weaversweb/utils/LoggerUtil.java
+/home/wadmin/Desktop/New Folder/Weavers Framekwork/Playwright/src/main/java/com/Weaversweb/utils/TestDataGenerator.java

@@ -1,9 +1,0 @@
-com/samurai/pages/Admin/UsersManagesments_page.class
-com/samurai/pages/Hr_manager/HR_management.class
-com/samurai/pages/Admin/SchoolMangement_page.class
-com/samurai/pages/common/LoginPage.class
-com/samurai/base/BasePage.class
-com/samurai/pages/common/SideMenuLink_page.class
-com/samurai/pages/Admin/Dashboard_page.class
-com/samurai/pages/common/JobRequest.class
-com/samurai/pages/Admin/AdminLogin_Page.class
