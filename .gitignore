@@ -1,0 +1,8 @@
+target/surefire-report/
+/target/
+.idea/
+.vscode/
+*.iml
+*.logs
+reports/screenshots/
+target/test-classes/

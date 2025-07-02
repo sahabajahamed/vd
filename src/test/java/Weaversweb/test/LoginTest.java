@@ -15,8 +15,8 @@ public class LoginTest extends BaseTest {
     @Test
     public void testValidLogin() {
           LoginPage loginPage = new LoginPage(page);
-         String username = ConfigReader.get("username");
-        String password = ConfigReader.get("password");
+         String username = ConfigReader.get("validUsername");
+        String password = ConfigReader.get("validPassword");
 
         loginPage.login(username, password);
 

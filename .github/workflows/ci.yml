@@ -1,34 +1,35 @@
-name: Playwright Java CI
+# .github/workflows/java-playwright.yml
+name: Java Playwright CI
 
-on:
-  push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+on: [push, pull_request]
 
 jobs:
-  test:
+  build-and-test:
     runs-on: ubuntu-latest
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-    - name: Setup Java
-      uses: actions/setup-java@v3
-      with:
-        distribution: 'temurin'
-        java-version: '17'
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: '17'
 
-    - name: Install Node.js (for Playwright)
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Set up Node & Playwright
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-    - name: Install Playwright
-      run: npx playwright install
+      - name: Install Playwright Browsers
+        run: npx playwright install
 
-    - name: Build with Maven
-      run: mvn clean install
+      - name: Run Tests
+        run: mvn clean test
 
-    - name: Run Tests
-      run: mvn test
+      - name: Upload Failed Screenshots
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: failed-screenshots
+          path: reports/screenshots/failed/

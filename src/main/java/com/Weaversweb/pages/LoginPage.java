@@ -1,10 +1,7 @@
 package com.Weaversweb.pages;
-
 import com.Weaversweb.base.BasePage;
 import com.Weaversweb.utils.LoggerUtil;
 import com.microsoft.playwright.Page;
-import com.microsoft.playwright.options.WaitForSelectorState;
-
 public class LoginPage extends BasePage {
     
      // Selectors
@@ -23,22 +20,27 @@ public class LoginPage extends BasePage {
     }
 
     public void enterUsername(String username) {
+         LoggerUtil.info("Entering username: " + username);
         fill(usernameInput, username);
     }
 
     public void enterPassword(String password) {
+         LoggerUtil.info("Entering password: " + password);
         fill(passwordInput, password);
     }
 
     public void clickLogin() {
+           LoggerUtil.info("Clicking login button");
         click(loginButton);
     }
 
     public String getDashboardText() {
+         LoggerUtil.info("Fetching dashboard header text");
         return getText(dashboardHeader);
     }
 
     public void login(String username, String password) {
+          LoggerUtil.info("Performing login action with provided credentials");
         navigateToLoginPage();
         enterUsername(username);
         enterPassword(password);
