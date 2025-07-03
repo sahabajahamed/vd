@@ -5,6 +5,7 @@ import java.nio.file.Paths;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 
 import com.Weaversweb.utils.ConfigReader;
 import com.Weaversweb.utils.LoggerUtil;
@@ -21,9 +22,10 @@ public class BaseTest {
     protected static BrowserContext context;
 
     @BeforeMethod
-    public void setup() {
+    @Parameters("browser")
+    public void setup(String browserName) {
         //  Read browser and URL from config.properties
-        String browserName = ConfigReader.get("browser");
+        // String browserName = ConfigReader.get("browser");
         String baseUrl = ConfigReader.get("baseUrl");
 
         playwright = Playwright.create();
@@ -43,8 +45,6 @@ public class BaseTest {
 
         context = browser.newContext(new Browser.NewContextOptions().setViewportSize(1920, 1080));
         page = context.newPage();
-
-        //  Use base URL from config file
         page.navigate(baseUrl);
     }
 
