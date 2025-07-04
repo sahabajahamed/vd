@@ -8,12 +8,7 @@
         </classes>
     </test>
 
-    <test name="FirefoxTest">
-        <parameter name="browser" value="firefox"/>
-        <classes>
-           <class name="Weaversweb.test.LoginTest" />
-        </classes>
-    </test>
+    
 
     <test name="WebkitTest">
         <parameter name="browser" value="webkit"/>

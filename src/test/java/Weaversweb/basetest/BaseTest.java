@@ -3,12 +3,13 @@ package Weaversweb.basetest;
 import java.io.File;
 import java.nio.file.Paths;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.Weaversweb.utils.ConfigReader;
-import com.Weaversweb.utils.LoggerUtil;
 import com.microsoft.playwright.Browser;
 import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.BrowserType;
@@ -16,6 +17,7 @@ import com.microsoft.playwright.Page;
 import com.microsoft.playwright.Playwright;
 
 public class BaseTest {
+      private static final Logger logger = LogManager.getLogger(BaseTest.class);
     protected Playwright playwright;
     protected Browser browser;
     protected Page page;
@@ -72,10 +74,10 @@ public class BaseTest {
                     .setPath(Paths.get(screenshotPath))
                     .setFullPage(true));
 
-            LoggerUtil.error("FAILED - Screenshot captured: " + screenshotPath);
+            logger.error("FAILED - Screenshot captured: " + screenshotPath);
             return screenshotPath;
         } catch (Exception e) {
-            LoggerUtil.error("Failed to capture screenshot: " + e.getMessage());
+            logger.error("Failed to capture screenshot: " + e.getMessage());
             return null;
         }
     }

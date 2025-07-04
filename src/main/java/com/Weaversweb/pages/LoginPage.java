@@ -1,8 +1,12 @@
 package com.Weaversweb.pages;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.Weaversweb.base.BasePage;
-import com.Weaversweb.utils.LoggerUtil;
 import com.microsoft.playwright.Page;
+
 public class LoginPage extends BasePage {
+    private static final Logger logger = LogManager.getLogger(LoginPage.class);
     
      // Selectors
     private final String usernameInput = "input[name='username']";
@@ -13,35 +17,28 @@ public class LoginPage extends BasePage {
     public LoginPage(Page page) {
         super(page); // Calls BasePage constructor
     }
-
-    public void navigateToLoginPage() {
-        LoggerUtil.info("Navigating to OrangeHRM login page");
-        page.navigate("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
-    }
-
     public void enterUsername(String username) {
-         LoggerUtil.info("Entering username: " + username);
+        logger.info("Entering username: " + username);
         fill(usernameInput, username);
     }
 
     public void enterPassword(String password) {
-         LoggerUtil.info("Entering password: " + password);
+        logger.info("Entering password: " + password);
         fill(passwordInput, password);
     }
 
     public void clickLogin() {
-           LoggerUtil.info("Clicking login button");
+        logger.info("Clicking login button");
         click(loginButton);
     }
 
     public String getDashboardText() {
-         LoggerUtil.info("Fetching dashboard header text");
+        logger.info("Fetching dashboard header text");
         return getText(dashboardHeader);
     }
 
     public void login(String username, String password) {
-          LoggerUtil.info("Performing login action with provided credentials");
-        navigateToLoginPage();
+        logger.info("Performing login action with provided credentials");
         enterUsername(username);
         enterPassword(password);
         clickLogin();

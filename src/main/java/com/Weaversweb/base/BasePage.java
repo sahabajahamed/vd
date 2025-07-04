@@ -2,7 +2,9 @@ package com.Weaversweb.base;
 
 import java.util.Random;
 
-import com.Weaversweb.utils.LoggerUtil;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import com.github.javafaker.Faker;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
@@ -10,48 +12,49 @@ import com.microsoft.playwright.options.SelectOption;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
 public class BasePage {
+    private static final Logger logger = LogManager.getLogger(BasePage.class);
     Faker faker = new Faker();
 
     public Page page;
 
     public BasePage(Page page) {
         this.page = page;
-        LoggerUtil.info("Initialized page: " + this.getClass().getSimpleName());
+        logger.info("Initialized page: " + this.getClass().getSimpleName());
     }
 
    public void click(String selector) {
-        LoggerUtil.info("Clicking element: " + selector);
+        logger.info("Clicking element: " + selector);
         page.locator(selector).click();
     }
 
     public void click(Locator locator) {
-        LoggerUtil.info("Clicking element");
+        logger.info("Clicking element");
         locator.click();
     }
 
     public void fill(String selector, String value) {
-        LoggerUtil.info("Typing '" + value + "' in: " + selector);
+        logger.info("Typing '" + value + "' in: " + selector);
         page.locator(selector).fill(value);
     }
 
     public void fill(Locator locator, String value) {
-        LoggerUtil.info("Typing '" + value + "'");
+        logger.info("Typing '" + value + "'");
         locator.fill(value);
     }
 
 
      public String getText(String selector) {
-        LoggerUtil.info("Getting text from: " + selector);
+        logger.info("Getting text from: " + selector);
         return page.locator(selector).innerText().trim();
     }
 
     public String getText(Locator locator) {
-        LoggerUtil.info("Getting text from element");
+        logger.info("Getting text from element");
         return locator.innerText().trim();
     }
 
      public void waitForElementVisible(String selector, int timeoutSeconds) {
-        LoggerUtil.info("Waiting for element visible: " + selector);
+        logger.info("Waiting for element visible: " + selector);
         page.waitForSelector(selector,
             new Page.WaitForSelectorOptions()
                 .setState(WaitForSelectorState.VISIBLE)
@@ -68,7 +71,7 @@ public class BasePage {
 
 
     public boolean isVisible(String selector, int timeoutSeconds) {
-        LoggerUtil.info("Checking visibility: " + selector);
+        logger.info("Checking visibility: " + selector);
         try {
             page.waitForSelector(selector,
                     new Page.WaitForSelectorOptions()
@@ -81,39 +84,39 @@ public class BasePage {
     }
 
     public void selectDropdownByValue(String selectXpath, String value) {
-        LoggerUtil.info("Selecting dropdown value: " + value);
+        logger.info("Selecting dropdown value: " + value);
         page.locator(selectXpath).selectOption(value);
     }
     
     public void selectDropdownByIndex(String selectXpath, int index) {
-        LoggerUtil.info("Selecting dropdown index: " + index);
+        logger.info("Selecting dropdown index: " + index);
         page.locator(selectXpath).selectOption(new SelectOption().setIndex(index));
     }
     
     
     public void acceptAlert() {
-        LoggerUtil.info("Accepting alert");
+        logger.info("Accepting alert");
         page.onDialog(dialog -> dialog.accept());
     }
       public void dismissAlert() {
-        LoggerUtil.info("Dismissing alert");
+        logger.info("Dismissing alert");
         page.onDialog(dialog -> dialog.dismiss());
     }
     
     // New window/tab handling
     public Page openNewTab(String buttonSelector) {
-        LoggerUtil.info("Opening new tab via: " + buttonSelector);
+        logger.info("Opening new tab via: " + buttonSelector);
         return page.waitForPopup(() -> click(buttonSelector));
     }
     
     public void switchToTab(int index) {
-        LoggerUtil.info("Switching to tab index: " + index);
+        logger.info("Switching to tab index: " + index);
         Page targetPage = page.context().pages().get(index);
         targetPage.bringToFront();
     }
 
     public void selectRadioByValue(String radioGroupSelector, String value) {
-        LoggerUtil.info("Selecting radio by value: " + value);
+        logger.info("Selecting radio by value: " + value);
         page.locator(radioGroupSelector + "[value='" + value + "']").click();
     }
 
