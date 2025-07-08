@@ -11,21 +11,22 @@ import Weaversweb.basetest.BaseTest;
 
 @Listeners(TestListener.class)
 public class LoginTest extends BaseTest {
-    
+
     @Test
     public void testValidLogin() {
-          LoginPage loginPage = new LoginPage(page);
-         String username = ConfigReader.get("validUsername");
-        String password = ConfigReader.get("validPassword");
+        try {
+            LoginPage loginPage = new LoginPage(page);
+            String username = ConfigReader.get("validUsername");
+            String password = ConfigReader.get("validPassword");
 
-        loginPage.login(username, password);
+            loginPage.login(username, password);
 
-        // Verify dashboard header appears
-        String actualHeader = loginPage.getDashboardText();
-        Assert.assertTrue(actualHeader.contains("Dashboard"), "Login failed: Dashboard not found");
+            String actualHeader = loginPage.getDashboardText();
+            Assert.assertTrue(actualHeader.contains("Dashboard"), "Login failed: Dashboard not found");
+        } catch (Exception e) {
+            e.printStackTrace();
+            Assert.fail("Test failed due to exception: " + e.getMessage());
+        }
+
     }
-
-
-
-    
 }

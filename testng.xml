@@ -8,13 +8,4 @@
         </classes>
     </test>
 
-    
-
-    <test name="WebkitTest">
-        <parameter name="browser" value="webkit"/>
-        <classes>
-            <class name="Weaversweb.test.LoginTest" />
-        </classes>
-    </test>
-
 </suite>

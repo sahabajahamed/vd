@@ -1,0 +1,18 @@
+2025-07-08 16:50:25.803 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
+2025-07-08 16:50:25.805 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - SKIPPED TEST: testValidLogin
+2025-07-08 16:50:25.821 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
+2025-07-08 16:50:28.573 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
+2025-07-08 16:50:28.592 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-07-08 16:50:28.593 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-07-08 16:50:28.593 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: Admin
+2025-07-08 16:50:28.593 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'Admin' in: input[name='username']
+2025-07-08 16:50:29.454 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: admin123
+2025-07-08 16:50:29.454 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'admin123' in: input[name='password']
+2025-07-08 16:50:29.462 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-07-08 16:50:29.462 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: button[type='submit']
+2025-07-08 16:50:30.914 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-07-08 16:50:30.914 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module
+2025-07-08 16:51:00.920 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: testValidLogin
+2025-07-08 16:51:01.094 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/testValidLogin_1751973660921.png
+2025-07-08 16:51:01.095 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/testValidLogin_1751973660921.png
+2025-07-08 16:51:03.133 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

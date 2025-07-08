@@ -29,19 +29,20 @@ public class BaseTest {
         //  Read browser and URL from config.properties
         // String browserName = ConfigReader.get("browser");
         String baseUrl = ConfigReader.get("baseUrl");
+        String headless = ConfigReader.get("headless");
 
         playwright = Playwright.create();
 
         switch (browserName.toLowerCase()) {
             case "firefox":
-                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
                 break;
             case "webkit":
-                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
                 break;
             case "chromium":
             default:
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(false));
+                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
                 break;
         }
 
@@ -52,15 +53,16 @@ public class BaseTest {
 
     @AfterClass
     public void tearDown() {
-        if (page != null)
-            page.close();
-        if (context != null)
-            context.close();
-        if (browser != null)
-            browser.close();
-        if (playwright != null)
-            playwright.close();
+         try {
+        Thread.sleep(2000); // TEMPORARY: let async actions complete
+    } catch (InterruptedException e) {
+        e.printStackTrace();
     }
+    if (page != null) page.close();
+    if (context != null) context.close();
+    if (browser != null) browser.close();
+    if (playwright != null) playwright.close();
+}
 
     public String captureFailedScreenshot(String testName) {
         String fileName = testName + "_" + System.currentTimeMillis() + ".png";

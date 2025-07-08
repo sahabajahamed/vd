@@ -1,0 +1,13 @@
+2025-07-08 16:52:47.415 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
+2025-07-08 16:52:47.435 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-07-08 16:52:47.435 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-07-08 16:52:47.436 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: Admin
+2025-07-08 16:52:47.436 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'Admin' in: input[name='username']
+2025-07-08 16:52:47.821 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: admin123
+2025-07-08 16:52:47.822 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'admin123' in: input[name='password']
+2025-07-08 16:52:47.833 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-07-08 16:52:47.835 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: button[type='submit']
+2025-07-08 16:52:49.270 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-07-08 16:52:49.271 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module
+2025-07-08 16:52:50.180 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: testValidLogin
+2025-07-08 16:52:52.403 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
