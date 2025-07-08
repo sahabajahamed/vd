@@ -1,0 +1,36 @@
+2025-07-07 16:05:03.085 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
+2025-07-07 16:05:03.116 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-07-07 16:05:03.117 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-07-07 16:05:03.117 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
+2025-07-07 16:05:03.117 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Entering username: Admin
+2025-07-07 16:05:03.118 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Typing 'Admin' in: input[name='username']
+2025-07-07 16:05:03.122 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-07-07 16:05:03.123 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-07-07 16:05:03.123 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: Admin
+2025-07-07 16:05:03.123 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'Admin' in: input[name='username']
+2025-07-07 16:05:03.604 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: admin123
+2025-07-07 16:05:03.605 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'admin123' in: input[name='password']
+2025-07-07 16:05:03.623 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-07-07 16:05:03.625 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: button[type='submit']
+2025-07-07 16:05:03.640 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Entering password: admin123
+2025-07-07 16:05:03.640 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Typing 'admin123' in: input[name='password']
+2025-07-07 16:05:03.670 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-07-07 16:05:03.671 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Clicking element: button[type='submit']
+2025-07-07 16:05:05.103 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-07-07 16:05:05.104 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module
+2025-07-07 16:05:05.289 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-07-07 16:05:05.290 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Getting text from: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module
+2025-07-07 16:05:05.924 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - PASSED TEST: testValidLogin
+2025-07-07 16:05:06.010 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: testValidLogin
+2025-07-07 16:05:06.022 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - Failed to capture screenshot: Error {
+  message='Target page, context or browser has been closed
+  name='TargetClosedError
+  stack='TargetClosedError: Target page, context or browser has been closed
+    at DispatcherConnection.dispatch (/tmp/playwright-java-8665701706753113159/package/lib/server/dispatchers/dispatcher.js:273:44)
+    at transport.onmessage (/tmp/playwright-java-8665701706753113159/package/lib/cli/driver.js:52:57)
+    at Immediate._onImmediate (/tmp/playwright-java-8665701706753113159/package/lib/protocol/transport.js:77:34)
+    at process.processImmediate (node:internal/timers:478:21)
+}
+2025-07-07 16:05:06.023 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: null
+2025-07-07 16:05:06.234 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
+2025-07-07 16:05:06.288 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

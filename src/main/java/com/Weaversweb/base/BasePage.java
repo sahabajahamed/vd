@@ -12,6 +12,8 @@ import com.microsoft.playwright.options.SelectOption;
 import com.microsoft.playwright.options.WaitForSelectorState;
 
 public class BasePage {
+
+    
     private static final Logger logger = LogManager.getLogger(BasePage.class);
     Faker faker = new Faker();
 
