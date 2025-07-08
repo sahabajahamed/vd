@@ -1,53 +1,52 @@
 name: Java Playwright CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v4
 
-      - name: Set up Java
-        uses: actions/setup-java@v3
-        with:
-          distribution: temurin
-          java-version: '17'
+    - name: Set up Java
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'temurin'
+        java-version: '17'
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '18'
+    - name: Set up Node.js (required for Playwright CLI)
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
 
-      - name: Install Playwright Browsers
-        run: npx playwright install --with-deps
+    - name: Install Playwright CLI
+      run: |
+        npm install -g playwright
+        playwright install
 
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
+    - name: Cache Maven packages
+      uses: actions/cache@v4
+      with:
+        path: ~/.m2
+        key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+        restore-keys: |
+          ${{ runner.os }}-maven-
 
-      - name: Install Dependencies
-        run: mvn install -DskipTests
+    - name: Build with Maven
+      run: mvn clean install
 
-      - name: Run Tests
-        run: mvn test
+    - name: Run TestNG Tests
+      run: mvn test
 
-      - name: Upload Failed Screenshots
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: failed-screenshots
-          path: reports/screenshots/failed/
-
-      - name: Upload Logs
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: logs
-          path: logs/
+    - name: Upload Test Reports
+      if: always()
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-reports
+        path: target/surefire-reports/
