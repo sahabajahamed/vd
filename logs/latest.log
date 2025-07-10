@@ -1,13 +1,13 @@
-2025-07-08 16:53:11.321 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
-2025-07-08 16:53:11.336 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
-2025-07-08 16:53:11.336 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
-2025-07-08 16:53:11.336 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: Admin
-2025-07-08 16:53:11.336 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'Admin' in: input[name='username']
-2025-07-08 16:53:11.731 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: admin123
-2025-07-08 16:53:11.732 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'admin123' in: input[name='password']
-2025-07-08 16:53:11.738 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
-2025-07-08 16:53:11.739 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: button[type='submit']
-2025-07-08 16:53:13.160 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
-2025-07-08 16:53:13.161 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module
-2025-07-08 16:53:14.029 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: testValidLogin
-2025-07-08 16:53:16.065 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
+2025-07-10 19:13:32.331 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: testValidLogin
+2025-07-10 19:13:32.351 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-07-10 19:13:32.352 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-07-10 19:13:32.352 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: Admin
+2025-07-10 19:13:32.352 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'Admin' in: input[name='username']
+2025-07-10 19:13:33.182 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: admin123
+2025-07-10 19:13:33.182 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'admin123' in: input[name='password']
+2025-07-10 19:13:33.190 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-07-10 19:13:33.190 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: button[type='submit']
+2025-07-10 19:13:34.429 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-07-10 19:13:34.429 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: h6.oxd-text.oxd-text--h6.oxd-topbar-header-breadcrumb-module
+2025-07-10 19:13:35.292 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: testValidLogin
+2025-07-10 19:13:37.366 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
