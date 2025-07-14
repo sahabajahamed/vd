@@ -1,5 +1,5 @@
-com/Weaversweb/utils/TestDataGenerator.class
 com/Weaversweb/pages/LoginPage.class
+com/Weaversweb/base/BasePage.class
+com/Weaversweb/utils/TestDataGenerator.class
 com/Weaversweb/utils/LoggerUtil.class
 com/Weaversweb/utils/ConfigReader.class
-com/Weaversweb/base/BasePage.class
