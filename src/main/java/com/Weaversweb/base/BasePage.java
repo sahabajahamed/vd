@@ -61,6 +61,7 @@ public class BasePage {
             new Page.WaitForSelectorOptions()
                 .setState(WaitForSelectorState.VISIBLE)
                 .setTimeout(timeoutSeconds * 1000));
+                
     }
 
 
