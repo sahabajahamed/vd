@@ -7,6 +7,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.Weaversweb.utils.ConfigReader;
@@ -24,8 +25,8 @@ public class BaseTest {
     protected static BrowserContext context;
 
     @BeforeMethod
-    @Parameters("browser")
-    public void setup(String browserName) {
+     @Parameters("browser")
+    public void setup( @Optional("chromium") String browserName) {
         //  Read browser and URL from config.properties
         // String browserName = ConfigReader.get("browser");
         String baseUrl = ConfigReader.get("baseUrl");
@@ -35,20 +36,28 @@ public class BaseTest {
 
         switch (browserName.toLowerCase()) {
             case "firefox":
-                browser = playwright.firefox().launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
+                browser = playwright.firefox()
+                        .launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
                 break;
             case "webkit":
-                browser = playwright.webkit().launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
+                browser = playwright.webkit()
+                        .launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
                 break;
             case "chromium":
             default:
-                browser = playwright.chromium().launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
+                browser = playwright.chromium()
+                        .launch(new BrowserType.LaunchOptions().setHeadless(Boolean.parseBoolean(headless)));
                 break;
         }
 
         context = browser.newContext(new Browser.NewContextOptions().setViewportSize(1920, 1080));
         page = context.newPage();
         page.navigate(baseUrl);
+    }
+    
+    public void bringtoFrontForPage()
+    {
+       page.bringToFront(); 
     }
 
     @AfterClass

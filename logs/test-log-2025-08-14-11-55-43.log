@@ -1,0 +1,101 @@
+2025-08-14 11:55:48.895 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-14 11:55:48.927 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:55:48.927 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-14 11:55:48.927 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-08-14 11:55:48.928 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-14 11:55:49.432 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-14 11:55:49.432 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-14 11:55:49.454 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-14 11:55:49.455 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:55:49.455 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:55:49.559 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-08-14 11:55:49.560 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-08-14 11:55:52.364 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-08-14 11:55:52.364 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='title-wrap']
+2025-08-14 11:55:52.370 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-14 11:55:55.937 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-14 11:55:55.938 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:55:55.938 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-14 11:55:55.938 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: johndonald1212@yopmail.com
+2025-08-14 11:55:55.938 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'johndonald1212@yopmail.com' in: //input[@id='email']
+2025-08-14 11:55:56.808 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-14 11:55:56.809 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-14 11:55:56.831 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-14 11:55:56.831 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:55:56.831 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:55:56.962 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching Error Message text
+2025-08-14 11:55:56.962 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--error']
+2025-08-14 11:55:59.760 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-14 11:56:03.540 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_Login_Empty_field
+2025-08-14 11:56:03.541 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:56:03.541 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-14 11:56:03.542 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:56:03.542 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:56:04.471 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //p[@id='email-helper-text']
+2025-08-14 11:56:04.491 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //p[@id='password-helper-text']
+2025-08-14 11:56:04.497 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: Verify_Login_Empty_field
+2025-08-14 11:56:07.822 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_UsernameAndPassword
+2025-08-14 11:56:07.823 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:56:07.823 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-14 11:56:07.823 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: johndonald1212@yopmail.com
+2025-08-14 11:56:07.823 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'johndonald1212@yopmail.com' in: //input[@id='email']
+2025-08-14 11:56:08.693 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadm21in@12312121
+2025-08-14 11:56:08.693 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'VDadm21in@12312121' in: //input[@id='password']
+2025-08-14 11:56:08.724 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-14 11:56:08.726 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:56:08.726 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:56:08.847 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching Error Message text
+2025-08-14 11:56:08.847 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--error']
+2025-08-14 11:56:11.653 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: Verify_user_can_login_with_Invalid_UsernameAndPassword
+2025-08-14 11:56:15.210 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: SucessFullyLoginAndLogout
+2025-08-14 11:56:15.211 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:56:15.212 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: MenuPage
+2025-08-14 11:56:15.212 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-14 11:56:15.212 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-08-14 11:56:15.212 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-14 11:56:15.706 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-14 11:56:15.707 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-14 11:56:15.724 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-14 11:56:15.725 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:56:15.725 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:56:15.812 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-08-14 11:56:15.813 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-08-14 11:56:19.106 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-08-14 11:56:19.106 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='title-wrap']
+2025-08-14 11:56:19.108 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing Logout 
+2025-08-14 11:56:19.108 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //a[normalize-space()='Logout']
+2025-08-14 11:56:19.108 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //a[normalize-space()='Logout']
+2025-08-14 11:56:19.179 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[normalize-space()='Yes, logout']
+2025-08-14 11:56:19.179 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[normalize-space()='Yes, logout']
+2025-08-14 11:56:19.955 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Sucesfully Click Logout 
+2025-08-14 11:56:19.957 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching Welcone Text
+2025-08-14 11:56:19.957 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='auth-card']/h3
+2025-08-14 11:56:20.317 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: SucessFullyLoginAndLogout
+2025-08-14 11:56:23.625 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: loginWithVendorMailandPassword
+2025-08-14 11:56:23.626 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:56:23.626 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-14 11:56:23.626 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: johndonald@yopmail.com
+2025-08-14 11:56:23.626 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'johndonald@yopmail.com' in: //input[@id='email']
+2025-08-14 11:56:24.509 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: Password@800
+2025-08-14 11:56:24.510 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'Password@800' in: //input[@id='password']
+2025-08-14 11:56:24.539 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-14 11:56:24.540 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:56:24.541 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:56:24.662 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching Error Message text
+2025-08-14 11:56:24.663 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--error']
+2025-08-14 11:56:27.956 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: loginWithVendorMailandPassword
+2025-08-14 11:56:31.197 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: forgotPasword
+2025-08-14 11:56:31.198 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-14 11:56:31.198 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Redireacting to forgot password 
+2025-08-14 11:56:31.198 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //a[normalize-space()='Forgot Password?']
+2025-08-14 11:56:31.198 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //a[normalize-space()='Forgot Password?']
+2025-08-14 11:56:32.129 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: ForgotPassword
+2025-08-14 11:56:32.130 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-14 11:56:32.158 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Enter Email id 
+2025-08-14 11:56:32.159 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-14 11:56:32.159 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-14 11:56:32.266 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Enter Send Button 
+2025-08-14 11:56:48.179 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: forgotPasword
+2025-08-14 11:56:49.386 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/forgotPasword_1755152808179.png
+2025-08-14 11:56:49.387 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/forgotPasword_1755152808179.png
+2025-08-14 11:56:51.554 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

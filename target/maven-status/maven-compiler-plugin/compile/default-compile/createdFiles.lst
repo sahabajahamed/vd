@@ -1,5 +1,8 @@
 com/Weaversweb/pages/LoginPage.class
+debug/LearnPlaywrightInspector.class
 com/Weaversweb/base/BasePage.class
+com/Weaversweb/pages/MenuPage.class
 com/Weaversweb/utils/TestDataGenerator.class
+com/Weaversweb/pages/ForgotPassword.class
 com/Weaversweb/utils/LoggerUtil.class
 com/Weaversweb/utils/ConfigReader.class

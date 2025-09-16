@@ -5,7 +5,9 @@ import java.util.Random;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.Weaversweb.pages.ForgotPassword;
 import com.github.javafaker.Faker;
+import com.microsoft.playwright.BrowserContext;
 import com.microsoft.playwright.Locator;
 import com.microsoft.playwright.Page;
 import com.microsoft.playwright.options.SelectOption;
@@ -18,14 +20,17 @@ public class BasePage {
     Faker faker = new Faker();
 
     public Page page;
+    protected BrowserContext context;
 
     public BasePage(Page page) {
         this.page = page;
+        this.context = page.context(); 
         logger.info("Initialized page: " + this.getClass().getSimpleName());
     }
 
    public void click(String selector) {
-        logger.info("Clicking element: " + selector);
+       logger.info("Clicking element: " + selector);
+        waitForElementVisible(selector, 2);
         page.locator(selector).click();
     }
 
@@ -122,6 +127,11 @@ public class BasePage {
         logger.info("Selecting radio by value: " + value);
         page.locator(radioGroupSelector + "[value='" + value + "']").click();
     }
+
+    public void BringOTPPage(BrowserContext context, String email) {
+    page.bringToFront(); // Custom method from BasePage
+    ForgotPassword.fetchOtpFromYopmail(context, email);
+}
 
     
 

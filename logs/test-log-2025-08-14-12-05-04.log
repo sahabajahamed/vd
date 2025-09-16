@@ -1,0 +1,13 @@
+2025-08-14 12:05:04.278 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-14 12:05:04.304 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-14 12:05:04.307 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - Failed to capture screenshot: Cannot invoke "com.microsoft.playwright.Page.screenshot(com.microsoft.playwright.Page$ScreenshotOptions)" because "this.page" is null
+2025-08-14 12:05:04.308 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: null
+2025-08-14 12:05:04.313 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: SucessFullyLoginAndLogout
+2025-08-14 12:05:04.315 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: SucessFullyLoginAndLogout
+2025-08-14 12:05:04.316 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - Failed to capture screenshot: Cannot invoke "com.microsoft.playwright.Page.screenshot(com.microsoft.playwright.Page$ScreenshotOptions)" because "this.page" is null
+2025-08-14 12:05:04.316 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: null
+2025-08-14 12:05:04.317 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: loginWithVendorMailandPassword
+2025-08-14 12:05:04.319 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: loginWithVendorMailandPassword
+2025-08-14 12:05:04.320 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - Failed to capture screenshot: Cannot invoke "com.microsoft.playwright.Page.screenshot(com.microsoft.playwright.Page$ScreenshotOptions)" because "this.page" is null
+2025-08-14 12:05:04.322 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: null
+2025-08-14 12:05:04.367 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

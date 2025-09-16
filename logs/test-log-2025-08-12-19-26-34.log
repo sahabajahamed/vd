@@ -1,0 +1,14 @@
+2025-08-12 19:26:39.242 [main] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-12 19:26:39.312 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-12 19:26:39.316 [main] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-12 19:26:39.317 [main] INFO  com.Weaversweb.pages.LoginPage - Entering username: johndonald1212@yopmail.com
+2025-08-12 19:26:39.319 [main] INFO  com.Weaversweb.base.BasePage - Typing 'johndonald1212@yopmail.com' in: //input[@id='email']
+2025-08-12 19:26:40.258 [main] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-12 19:26:40.258 [main] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-12 19:26:40.297 [main] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-12 19:26:40.298 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-12 19:26:40.298 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-12 19:26:40.426 [main] INFO  com.Weaversweb.pages.LoginPage - Fetching Error Message text
+2025-08-12 19:26:40.427 [main] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--error']
+2025-08-12 19:26:43.247 [main] INFO  Weaversweb.test.TestListener - PASSED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-12 19:26:45.377 [main] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

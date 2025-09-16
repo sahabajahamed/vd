@@ -1,0 +1,89 @@
+2025-08-12 18:01:08.253 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 18:01:08.319 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-12 18:01:08.319 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-12 18:01:08.319 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-08-12 18:01:08.323 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-12 18:01:09.642 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 18:01:09.645 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-12 18:01:09.645 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-12 18:01:09.645 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-08-12 18:01:09.646 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-12 18:01:09.842 [TestNG-tests-2] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 18:01:09.843 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-12 18:01:09.844 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-12 18:01:09.844 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-08-12 18:01:09.844 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-12 18:01:09.928 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-12 18:01:09.928 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-12 18:01:10.078 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-12 18:01:10.079 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-12 18:01:10.079 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-12 18:01:11.114 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-08-12 18:01:11.138 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-08-12 18:01:11.390 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-12 18:01:11.394 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-12 18:01:11.461 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-12 18:01:11.462 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-12 18:01:11.462 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-12 18:01:11.757 [TestNG-tests-2] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-08-12 18:01:11.757 [TestNG-tests-2] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-08-12 18:01:12.644 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-12 18:01:12.659 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-12 18:01:12.783 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-12 18:01:12.783 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-12 18:01:12.783 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-12 18:01:13.029 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-08-12 18:01:13.029 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-08-12 18:01:41.252 [TestNG-tests-3] ERROR Weaversweb.test.TestListener - FAILED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 18:01:41.622 [TestNG-tests-3] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/Verify_user_can_login_with_valid_credentials_1755001901252.png
+2025-08-12 18:01:41.623 [TestNG-tests-3] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/Verify_user_can_login_with_valid_credentials_1755001901252.png
+2025-08-12 18:01:41.772 [TestNG-tests-2] ERROR Weaversweb.test.TestListener - FAILED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 18:01:41.944 [TestNG-tests-2] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/Verify_user_can_login_with_valid_credentials_1755001901772.png
+2025-08-12 18:01:41.945 [TestNG-tests-2] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/Verify_user_can_login_with_valid_credentials_1755001901772.png
+2025-08-12 18:01:43.046 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - FAILED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 18:01:47.060 [TestNG-tests-1] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/Verify_user_can_login_with_valid_credentials_1755001903047.png
+2025-08-12 18:01:47.065 [TestNG-tests-1] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/Verify_user_can_login_with_valid_credentials_1755001903047.png
+2025-08-12 18:02:43.467 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-12 18:02:43.544 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-12 18:02:43.544 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-12 18:02:43.545 [TestNG-tests-3] INFO  com.Weaversweb.pages.LoginPage - Entering username: johndonald1212@yopmail.com
+2025-08-12 18:02:43.545 [TestNG-tests-3] INFO  com.Weaversweb.base.BasePage - Typing 'johndonald1212@yopmail.com' in: //input[@id='email']
+2025-08-12 18:03:14.972 [TestNG-tests-3] ERROR Weaversweb.test.TestListener - FAILED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-12 18:03:47.805 [TestNG-tests-3] ERROR Weaversweb.basetest.BaseTest - Failed to capture screenshot: Error {
+  message='Timeout 30000ms exceeded.
+  name='TimeoutError
+  stack='TimeoutError: Timeout 30000ms exceeded.
+    at ProgressController.run (/tmp/playwright-java-17726688522747880103/package/lib/server/progress.js:78:26)
+    at Page.screenshot (/tmp/playwright-java-17726688522747880103/package/lib/server/page.js:490:23)
+    at PageDispatcher.screenshot (/tmp/playwright-java-17726688522747880103/package/lib/server/dispatchers/pageDispatcher.js:204:32)
+    at PageDispatcher._handleCommand (/tmp/playwright-java-17726688522747880103/package/lib/server/dispatchers/dispatcher.js:94:40)
+    at DispatcherConnection.dispatch (/tmp/playwright-java-17726688522747880103/package/lib/server/dispatchers/dispatcher.js:361:39)
+}
+Call log:
+- taking page screenshot
+
+2025-08-12 18:03:47.929 [TestNG-tests-3] ERROR Weaversweb.test.TestListener - Screenshot saved to: null
+2025-08-12 18:05:13.664 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-12 18:05:13.680 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - SKIPPED TEST: Verify_user_can_login_with_Invalid_credentias
+2025-08-12 18:05:13.692 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_Login_Empty_field
+2025-08-12 18:05:13.692 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - SKIPPED TEST: Verify_Login_Empty_field
+2025-08-12 18:05:13.702 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_UsernameAndPassword
+2025-08-12 18:05:13.702 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - SKIPPED TEST: Verify_user_can_login_with_Invalid_UsernameAndPassword
+2025-08-12 18:05:13.703 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: SucessFullyLoginAndLogout
+2025-08-12 18:05:13.703 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - SKIPPED TEST: SucessFullyLoginAndLogout
+2025-08-12 18:05:13.704 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: loginWithVendorMailandPassword
+2025-08-12 18:05:13.704 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - SKIPPED TEST: loginWithVendorMailandPassword
+2025-08-12 18:05:13.705 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: forgotPasword
+2025-08-12 18:05:13.705 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - SKIPPED TEST: forgotPasword
+2025-08-12 18:05:24.419 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
+2025-08-12 18:07:40.264 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_Login_Empty_field
+2025-08-12 18:07:40.285 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - SKIPPED TEST: Verify_Login_Empty_field
+2025-08-12 18:07:40.311 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_Invalid_UsernameAndPassword
+2025-08-12 18:07:40.311 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - SKIPPED TEST: Verify_user_can_login_with_Invalid_UsernameAndPassword
+2025-08-12 18:07:40.312 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: SucessFullyLoginAndLogout
+2025-08-12 18:07:40.312 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - SKIPPED TEST: SucessFullyLoginAndLogout
+2025-08-12 18:07:40.313 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: loginWithVendorMailandPassword
+2025-08-12 18:07:40.313 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - SKIPPED TEST: loginWithVendorMailandPassword
+2025-08-12 18:07:40.332 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - STARTED TEST: forgotPasword
+2025-08-12 18:07:40.332 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - SKIPPED TEST: forgotPasword
+2025-08-12 18:07:40.471 [TestNG-tests-3] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

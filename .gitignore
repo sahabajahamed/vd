@@ -6,3 +6,4 @@ target/surefire-report/
 *.logs
 reports/screenshots/
 target/test-classes/
+reports

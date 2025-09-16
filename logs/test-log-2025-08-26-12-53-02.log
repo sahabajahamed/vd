@@ -1,0 +1,17 @@
+2025-08-26 12:53:07.152 [main] INFO  Weaversweb.test.TestListener - STARTED TEST: forgotPasword
+2025-08-26 12:53:07.205 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-26 12:53:07.207 [main] INFO  com.Weaversweb.pages.LoginPage - Redireacting to forgot password 
+2025-08-26 12:53:07.207 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //a[normalize-space()='Forgot Password?']
+2025-08-26 12:53:07.207 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //a[normalize-space()='Forgot Password?']
+2025-08-26 12:53:08.175 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: ForgotPassword
+2025-08-26 12:53:08.178 [main] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-26 12:53:08.947 [main] INFO  com.Weaversweb.pages.LoginPage - Enter Email id 
+2025-08-26 12:53:08.948 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-26 12:53:08.948 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-26 12:53:09.036 [main] INFO  com.Weaversweb.pages.LoginPage - Enter Send Button 
+2025-08-26 12:53:15.037 [main] INFO  com.Weaversweb.pages.LoginPage - Entering OTP: 551235
+2025-08-26 12:53:15.037 [main] INFO  com.Weaversweb.base.BasePage - Typing '551235' in: //input[@id='email']
+2025-08-26 12:53:15.070 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-26 12:53:15.070 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-26 12:53:15.157 [main] INFO  Weaversweb.test.TestListener - PASSED TEST: forgotPasword
+2025-08-26 12:53:17.373 [main] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

@@ -1,0 +1,16 @@
+2025-08-26 12:52:39.851 [main] INFO  Weaversweb.test.TestListener - STARTED TEST: loginWithVendorMailandPassword
+2025-08-26 12:52:39.878 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-26 12:52:39.879 [main] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-26 12:52:39.879 [main] INFO  com.Weaversweb.pages.LoginPage - Entering username: johndonald@yopmail.com
+2025-08-26 12:52:39.880 [main] INFO  com.Weaversweb.base.BasePage - Typing 'johndonald@yopmail.com' in: //input[@id='email']
+2025-08-26 12:52:40.713 [main] INFO  com.Weaversweb.pages.LoginPage - Entering password: Password@800
+2025-08-26 12:52:40.715 [main] INFO  com.Weaversweb.base.BasePage - Typing 'Password@800' in: //input[@id='password']
+2025-08-26 12:52:40.746 [main] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-26 12:52:40.747 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-26 12:52:40.749 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-26 12:52:40.873 [main] INFO  com.Weaversweb.pages.LoginPage - Fetching Error Message text
+2025-08-26 12:52:40.874 [main] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--error']
+2025-08-26 12:52:43.705 [main] ERROR Weaversweb.test.TestListener - FAILED TEST: loginWithVendorMailandPassword
+2025-08-26 12:52:43.919 [main] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/loginWithVendorMailandPassword_1756192963705.png
+2025-08-26 12:52:43.920 [main] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/loginWithVendorMailandPassword_1756192963705.png
+2025-08-26 12:52:46.087 [main] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

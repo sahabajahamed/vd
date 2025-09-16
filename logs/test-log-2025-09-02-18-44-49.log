@@ -1,0 +1,23 @@
+2025-09-02 18:44:54.053 [main] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_Search
+2025-09-02 18:44:54.126 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-09-02 18:44:54.127 [main] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-09-02 18:44:54.127 [main] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-09-02 18:44:54.127 [main] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-09-02 18:44:55.044 [main] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-09-02 18:44:55.045 [main] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-09-02 18:44:55.095 [main] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-09-02 18:44:55.096 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-09-02 18:44:55.097 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-09-02 18:44:55.263 [main] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-09-02 18:44:55.264 [main] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-09-02 18:44:59.080 [main] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-09-02 18:44:59.080 [main] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='title-wrap']
+2025-09-02 18:44:59.098 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: MenuPage
+2025-09-02 18:44:59.099 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //a[normalize-space()='User Management']
+2025-09-02 18:44:59.099 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //a[normalize-space()='User Management']
+2025-09-02 18:44:59.196 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: UserManagement
+2025-09-02 18:44:59.197 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: UserManagement
+2025-09-02 18:45:05.092 [main] ERROR Weaversweb.test.TestListener - FAILED TEST: Verify_user_can_Search
+2025-09-02 18:45:05.280 [main] ERROR Weaversweb.basetest.BaseTest - FAILED - Screenshot captured: reports/screenshots/failed/Verify_user_can_Search_1756818905092.png
+2025-09-02 18:45:05.280 [main] ERROR Weaversweb.test.TestListener - Screenshot saved to: reports/screenshots/failed/Verify_user_can_Search_1756818905092.png
+2025-09-02 18:45:07.464 [main] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

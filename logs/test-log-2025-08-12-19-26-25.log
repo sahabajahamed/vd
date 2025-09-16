@@ -1,0 +1,3 @@
+2025-08-12 19:26:29.203 [main] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 19:26:29.218 [main] INFO  Weaversweb.test.TestListener - SKIPPED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-12 19:26:29.225 [main] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

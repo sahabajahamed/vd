@@ -1,0 +1,17 @@
+2025-08-05 17:29:54.228 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - STARTED TEST: forgotPasword
+2025-08-05 17:29:54.265 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-05 17:29:54.266 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Redireacting to forgot password 
+2025-08-05 17:29:54.267 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //a[normalize-space()='Forgot Password?']
+2025-08-05 17:29:54.267 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //a[normalize-space()='Forgot Password?']
+2025-08-05 17:29:54.816 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Initialized page: ForgotPassword
+2025-08-05 17:29:54.817 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-05 17:29:54.836 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Enter Email id 
+2025-08-05 17:29:54.836 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-05 17:29:54.836 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-05 17:29:54.919 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Enter Send Button 
+2025-08-05 17:30:00.675 [TestNG-tests-1] INFO  com.Weaversweb.pages.LoginPage - Entering OTP: 971992
+2025-08-05 17:30:00.677 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Typing '971992' in: //input[@id='email']
+2025-08-05 17:30:00.702 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-05 17:30:00.703 [TestNG-tests-1] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-05 17:30:00.774 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - PASSED TEST: forgotPasword
+2025-08-05 17:30:02.975 [TestNG-tests-1] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED

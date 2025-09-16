@@ -1,0 +1,21 @@
+2025-08-29 18:28:59.064 [main] INFO  Weaversweb.test.TestListener - STARTED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-29 18:28:59.103 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: LoginPage
+2025-08-29 18:28:59.104 [main] INFO  com.Weaversweb.pages.LoginPage - Performing login action with provided credentials
+2025-08-29 18:28:59.104 [main] INFO  com.Weaversweb.pages.LoginPage - Entering username: vdadmin@yopmail.com
+2025-08-29 18:28:59.104 [main] INFO  com.Weaversweb.base.BasePage - Typing 'vdadmin@yopmail.com' in: //input[@id='email']
+2025-08-29 18:29:00.071 [main] INFO  com.Weaversweb.pages.LoginPage - Entering password: VDadmin@123
+2025-08-29 18:29:00.071 [main] INFO  com.Weaversweb.base.BasePage - Typing 'VDadmin@123' in: //input[@id='password']
+2025-08-29 18:29:00.116 [main] INFO  com.Weaversweb.pages.LoginPage - Clicking login button
+2025-08-29 18:29:00.117 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //button[@type='submit']
+2025-08-29 18:29:00.118 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //button[@type='submit']
+2025-08-29 18:29:00.250 [main] INFO  com.Weaversweb.pages.LoginPage - Fetching SucessFully Login Message 
+2025-08-29 18:29:00.250 [main] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='Toastify__toast Toastify__toast-theme--light Toastify__toast--success']
+2025-08-29 18:29:04.068 [main] INFO  com.Weaversweb.pages.LoginPage - Fetching dashboard header text
+2025-08-29 18:29:04.068 [main] INFO  com.Weaversweb.base.BasePage - Getting text from: //div[@class='title-wrap']
+2025-08-29 18:29:04.088 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: MenuPage
+2025-08-29 18:29:04.092 [main] INFO  com.Weaversweb.base.BasePage - Clicking element: //a[normalize-space()='User Management']
+2025-08-29 18:29:04.093 [main] INFO  com.Weaversweb.base.BasePage - Waiting for element visible: //a[normalize-space()='User Management']
+2025-08-29 18:29:04.195 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: UserManagement
+2025-08-29 18:29:04.199 [main] INFO  com.Weaversweb.base.BasePage - Initialized page: UserManagement
+2025-08-29 18:29:07.076 [main] INFO  Weaversweb.test.TestListener - PASSED TEST: Verify_user_can_login_with_valid_credentials
+2025-08-29 18:29:09.237 [main] INFO  Weaversweb.test.TestListener - TEST EXECUTION FINISHED
