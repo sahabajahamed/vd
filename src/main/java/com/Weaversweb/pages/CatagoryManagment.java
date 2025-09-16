@@ -29,6 +29,8 @@ public class CatagoryManagment extends BasePage {
     private String keywords = "//input[@id='«r37»']";
     private String services = "//input[@id='«r39»']";
     private String amenties = "//input[@id='«r3b»']";
+    private String categoryList = "//ul[@id='«r35»']//li";
+    
 
     
 }
